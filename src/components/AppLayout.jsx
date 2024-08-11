@@ -19,7 +19,7 @@ const AppLayout = WrappedComponent => {
         <Title />
         <Header />
         <div className="grid grid-cols-12 gap-2 h-dvh">
-          <div className="col-span-3">
+          <div className="col-span-3 overflow-y-auto">
             <ChatList
               handleDeleteChat={handleDeleteChat}
               chats={sampleData}

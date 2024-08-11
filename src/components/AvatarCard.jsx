@@ -3,7 +3,7 @@ import { Avatar, AvatarGroup } from '@mui/material';
 const AvatarCard = ({ avatar = [], max = 4 }) => {
   return (
     <div>
-      <AvatarGroup max={max}>
+      <AvatarGroup max={max} sx={{ position: 'relative' }}>
         <div className="w-12 h-20">
           {avatar?.map((i, index) => (
             <Avatar
